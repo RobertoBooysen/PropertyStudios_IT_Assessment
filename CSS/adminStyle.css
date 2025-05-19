@@ -1,0 +1,118 @@
+/*Admin portal styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+/*Admin navigation */
+.admin-nav {
+    background-color: #2C5F2D;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.admin-nav-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.admin-nav-brand i {
+    font-size: 1.2rem;
+}
+
+.admin-nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.admin-nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.admin-nav-links a:hover {
+    background-color: #97BC62;
+    color: white;
+}
+
+.admin-nav-links a.active {
+    background-color: #97BC62;
+    color: white;
+}
+
+.admin-nav-links i {
+    font-size: 1.1rem;
+}
+
+/*Admin container*/
+.admin-container {
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+.admin-container h1 {
+    color: #2C5F2D;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/*Responsive design*/
+@media screen and (max-width: 768px) {
+    .admin-nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .admin-nav-brand {
+        margin-bottom: 1rem;
+    }
+
+    .admin-nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .admin-nav-links a {
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+
+    .admin-container {
+        margin-top: 120px;
+        padding: 1rem;
+    }
+}
+
+/*Table responsive */
+@media screen and (max-width: 600px) {
+    .submissions-table {
+        display: block;
+        overflow-x: auto;
+    }
+} 
